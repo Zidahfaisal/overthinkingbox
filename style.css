@@ -53,4 +53,100 @@ function overthink() {
   });
 }
 
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.15);
+  border-radius: 18px;
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #6366f1;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+input[type="text"]:focus {
+  border-color: #6366f1;
+}
+
+button {
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+  background: linear-gradient(90deg, #818cf8 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#output {
+  margin-top: 2rem;
+  text-align: left;
+}
+#output p {
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  color: #4b5563;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.04);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  input[type="text"], button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+  #output p {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+
 
